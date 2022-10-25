@@ -5,23 +5,17 @@ public class Main {
         Random rnd = new Random();
         MemoryManager manager = new MemoryManager(10,rnd.nextInt(12, 18));
 
-
-
         VM virtualMemory = new VM();
-        for(int i = 0; i < ; i++){
+        for(int i = 0; i < manager.tablePages.length; i++){
             virtualMemory.pages.add(new Page());
         }
+        virtualMemory.Run(manager);
+
+
         for(int i = 0; i < manager.kolCells; i++){
 
         }
 
-
-
-        int tact = 10;
-        while(tact > 0){
-            manager.Run();
-            tact--;
-        }
 
 
     }

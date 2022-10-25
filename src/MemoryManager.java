@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MemoryManager {
     public int kolCells;
@@ -6,9 +7,13 @@ public class MemoryManager {
     public MemoryManager(int kolCells, int kolPages){
         this.kolCells = kolCells;
         tablePages = new int[kolPages];
+        Arrays.fill(tablePages, -1);
     }
 
-    public void Run(){
+    public void RunLRU() //last recently used
+    {
+        //поиск странично
+
 
     }
 }
